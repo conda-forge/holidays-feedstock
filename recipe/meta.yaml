@@ -1,5 +1,5 @@
 {% set name = "holidays" %}
-{% set version = "0.9.11" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 915fdb92b596cfb66067010759b4384a9c6bc82931311d5bf07fe04920cc11bc
+  sha256: 9024315e6c15e2cde1362a8c36a6d1e5004f78e56f17789a6dcc2ca7f24ca3b7
 
 build:
   noarch: python
@@ -23,13 +23,14 @@ requirements:
     - python
     - python-dateutil
     - six
+    - convertdate
 
 test:
   imports:
     - holidays
 
 about:
-  home: https://github.com/lidaobing/python-lunardate
+  home: https://github.com/dr-prodigy/python-holidays
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -42,3 +43,5 @@ about:
 extra:
   recipe-maintainers:
     - bletham
+    - rpanai
+    
