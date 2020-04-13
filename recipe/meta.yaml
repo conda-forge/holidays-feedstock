@@ -1,5 +1,5 @@
 {% set name = "holidays" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9024315e6c15e2cde1362a8c36a6d1e5004f78e56f17789a6dcc2ca7f24ca3b7
+  sha256: 5a91324fcaa4c72a0fe9a13601436f65ee33b2ef033686f4e2228d58a7631970
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Generate and work with holidays in Python'
+  summary: Generate and work with holidays in Python
   description: |
     A fast, efficient Python library for generating country, province and state
     specific sets of holidays on the fly. It aims to make determining whether a
@@ -44,4 +44,4 @@ extra:
   recipe-maintainers:
     - bletham
     - rpanai
-    
+
