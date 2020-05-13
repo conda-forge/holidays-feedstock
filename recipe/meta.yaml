@@ -18,12 +18,12 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
   run:
     - python
     - python-dateutil
     - six
     - convertdate
+    - korean_lunar_calendar
 
 test:
   imports:
@@ -44,4 +44,5 @@ extra:
   recipe-maintainers:
     - bletham
     - rpanai
+    - synapticarbors
 
