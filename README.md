@@ -121,4 +121,5 @@ Feedstock Maintainers
 
 * [@bletham](https://github.com/bletham/)
 * [@rpanai](https://github.com/rpanai/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
