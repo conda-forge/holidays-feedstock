@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - python-dateutil
     - six
-    - convertdate
+    - convertdate <=2.2.0
     - korean_lunar_calendar
 
 test:
