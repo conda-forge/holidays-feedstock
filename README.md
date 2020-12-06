@@ -5,7 +5,7 @@ Home: https://github.com/dr-prodigy/python-holidays
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/holidays-feedstock/blob/master/LICENSE.txt)
 
 Summary: Generate and work with holidays in Python
 

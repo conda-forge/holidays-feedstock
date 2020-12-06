@@ -1,5 +1,5 @@
 {% set name = "holidays" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 839281f2b1ae7ac576da7951472482f6e714818296853107ea861fa60f5013cc
+  sha256: 72378e7c00139ab157adf5155c0ec7af62489b7cae8d66dfc53a9a02ddcb1cab
 
 build:
   noarch: python
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - python-dateutil
     - six
-    - convertdate
+    - convertdate <=2.2.0
     - korean_lunar_calendar
 
 test:
