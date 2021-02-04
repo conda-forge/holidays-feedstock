@@ -16,14 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.6
     - pip
   run:
-    - python >=2.7
+    - python >=3.6
     - python-dateutil
     - six
-    - convertdate <=2.2.0
+    - convertdate >=2.3.0
     - korean_lunar_calendar
+    - hijri-converter
 
 test:
   imports:
