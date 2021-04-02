@@ -1,5 +1,5 @@
 {% set name = "holidays" %}
-{% set version = "0.10.5.2" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ed17186d785928723efecebe4ab2d03358abe8ef3f7fa939a39d3392d6c2903c
+  sha256: 7fafd846f67f0eb7e1f9c19c38f4a7967bf07aed5ded2dd7a8aa2f937b0ea01b
 
 build:
   noarch: python
