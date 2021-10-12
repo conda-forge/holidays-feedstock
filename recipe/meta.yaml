@@ -10,16 +10,19 @@ source:
   sha256: 4855afe0ebf428efbcf848477828b889f8515be7f4f15ae26682919369d92774
 
 build:
+  skip: True     # [py<36]
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
+    - setuptools
+    - wheel
   run:
-    - python >=3.6
+    - python
     - python-dateutil
     - convertdate >=2.3.0
     - korean_lunar_calendar
@@ -28,6 +31,12 @@ requirements:
 test:
   imports:
     - holidays
+  requires:
+    # due to conda build bug which causes python 3.10 to be used
+    - python <3.10
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/dr-prodigy/python-holidays
