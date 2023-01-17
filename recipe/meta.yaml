@@ -32,8 +32,6 @@ test:
   imports:
     - holidays
   requires:
-    # due to conda build bug which causes python 3.10 to be used
-    # - python <3.10
     - pip
   commands:
     - pip check
