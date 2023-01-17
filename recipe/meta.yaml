@@ -26,13 +26,14 @@ requirements:
     - convertdate >=2.3.0
     - korean_lunar_calendar
     - hijri-converter
+    - pymeeus
 
 test:
   imports:
     - holidays
   requires:
     # due to conda build bug which causes python 3.10 to be used
-    - python <3.10
+    # - python <3.10
     - pip
   commands:
     - pip check
