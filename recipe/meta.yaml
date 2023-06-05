@@ -21,9 +21,6 @@ requirements:
   run:
     - python >=3.7
     - python-dateutil
-    - convertdate >=2.3.0
-    - korean_lunar_calendar
-    - hijri-converter
 
 test:
   imports:
