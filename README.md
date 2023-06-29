@@ -9,6 +9,10 @@ Package license: MIT
 
 Summary: Generate and work with holidays in Python
 
+Development: https://github.com/dr-prodigy/python-holidays
+
+Documentation: https://python-holidays.readthedocs.io/en/latest/
+
 A fast, efficient Python library for generating country, province and state
 specific sets of holidays on the fly. It aims to make determining whether a
 specific date is a holiday as fast and flexible as possible.
