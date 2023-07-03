@@ -1,5 +1,5 @@
 {% set name = "holidays" %}
-{% set version = "0.27.1" %}
+{% set version = "0.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5d9a7ca1763cfa3d329b88b66b591a12dc4267302428a7cf158136d0310eaeec
+  sha256: 96e1cc82153c56c1503480b99f898e5c1b8075f75ecfe5b0257b6bdd571e4363
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - python-dateutil
 
 test:
