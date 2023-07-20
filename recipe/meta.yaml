@@ -1,5 +1,5 @@
 {% set name = "holidays" %}
-{% set version = "0.18" %}
+{% set version = "0.29" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e94d9d3536ff1a2a70d6d2f56cb055eb9a95d0b9a3a5fb81b9e8f9d36e333789
+  sha256: e8219df1570dd92f17244ff7da93f57630b0dd2fedf86e86b4110f07825b0a67
 
 build:
-  skip: True     # [py<37]
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -23,10 +22,6 @@ requirements:
   run:
     - python
     - python-dateutil
-    - convertdate >=2.3.0
-    - korean_lunar_calendar
-    - hijri-converter
-    - pymeeus
 
 test:
   imports:
