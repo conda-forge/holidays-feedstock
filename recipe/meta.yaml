@@ -31,7 +31,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/dr-prodigy/python-holidays
+  home: https://github.com/vacanza/python-holidays/
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -40,7 +40,7 @@ about:
     A fast, efficient Python library for generating country, province and state
     specific sets of holidays on the fly. It aims to make determining whether a
     specific date is a holiday as fast and flexible as possible.
-  dev_url: https://github.com/dr-prodigy/python-holidays
+  dev_url: https://github.com/vacanza/python-holidays/
   doc_url: https://python-holidays.readthedocs.io/en/latest/
 
 extra:
