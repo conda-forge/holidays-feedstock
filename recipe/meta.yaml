@@ -1,13 +1,13 @@
 {% set name = "holidays" %}
-{% set version = "0.59" %}
+{% set version = "0.60" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c5cd2e1c0c27a64217b10faf2e8fcc224f5bb64087b56b70c6aff21f6379e6e4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 495fc5123f5d92b92673237375eb8c15a03d21c647b089db509b7d9612267556
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - python-dateutil
 
 test:
