@@ -1,5 +1,6 @@
 {% set name = "holidays" %}
 {% set version = "0.61" %}
+{% set python_min = "3.9" }
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - python-dateutil
 
 test:
@@ -28,6 +29,7 @@ test:
     - holidays
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
