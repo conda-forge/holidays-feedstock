@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: holidays
-  version: "0.78"
+  version: "0.79"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 7f21d09a475f42d79344498363586d5dadce07bb74f361c80c2658d59c513348
+  sha256: e30cfda034277d42fd965dd5a1b295b179b74f1974f2e272f58777f5991d1f50
 
 build:
   number: 0
