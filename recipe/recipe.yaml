@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: holidays
-  version: "0.86"
+  version: '0.87'
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: a566041e9ff81554661a7be282d6ec37d0d328a0e01a2e3da587421aaf630a07
+  sha256: e47d4e9c6b9c7afe331cc18f7fcf2026a38b4d701c9560a823d68a0306d8b3b3
 
 build:
   number: 0
@@ -24,8 +24,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - python-dateutil
-
+    - python-dateutil >=2.9.0.post0,<3
 tests:
   - python:
       imports:
