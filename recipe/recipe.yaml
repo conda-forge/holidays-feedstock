@@ -1,15 +1,14 @@
 schema_version: 1
 
 context:
-  name: holidays
   version: "0.104"
 
 package:
-  name: ${{ name|lower }}
+  name: holidays
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/h/holidays/holidays-${{ version }}.tar.gz
   sha256: 7e327b255dee3de3c8f7fef58f835ccb7685881ea72176697ff60269c57743b2
 
 build:
@@ -30,7 +29,9 @@ tests:
       imports:
         - holidays
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: MIT
