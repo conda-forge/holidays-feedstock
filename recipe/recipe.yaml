@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.104"
+  version: "0.105"
 
 package:
   name: holidays
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/holidays/holidays-${{ version }}.tar.gz
-  sha256: 7e327b255dee3de3c8f7fef58f835ccb7685881ea72176697ff60269c57743b2
+  sha256: fc9abc0c187b62e955f92aa12dbe7ed1998cc94712f295ec9244db788594d662
 
 build:
   number: 0
@@ -29,7 +29,7 @@ tests:
       imports:
         - holidays
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
 
